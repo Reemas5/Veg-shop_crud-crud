@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veg shop</title>
+  </head>
+  <body>
+    <form onsubmit="handleFormSubmit(event)">
+      <h2>Veg shop</h2>
+      <p id="all_students"></p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
+      <label for="price">Price</label>
+      <input type="text" name="price" id="price" />
+      <label for="quantity">Quantity</label>
+      <input type="number" name="quantity" id="quantity" />
+      <button type="submit">Add to shop</button>
+    </form>
+    <ul id="items_list"></ul>
+    <h2 id="total_count"></h2>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
